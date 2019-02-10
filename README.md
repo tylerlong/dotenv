@@ -1,14 +1,18 @@
-# dotenv
+# dotenv-override
 
-<img src="https://raw.githubusercontent.com/motdotla/dotenv/master/dotenv.png" alt="dotenv" align="right" />
+<img src="https://raw.githubusercontent.com/tylerlong/dotenv-override/master/dotenv.png" alt="dotenv" align="right" />
 
 Dotenv is a zero-dependency module that loads environment variables from a `.env` file into [`process.env`](https://nodejs.org/docs/latest/api/process.html#process_process_env). Storing configuration in the environment separate from code is based on [The Twelve-Factor App](http://12factor.net/config) methodology.
 
-[![BuildStatus](https://img.shields.io/travis/motdotla/dotenv/master.svg?style=flat-square)](https://travis-ci.org/motdotla/dotenv)
-[![Build status](https://ci.appveyor.com/api/projects/status/github/motdotla/dotenv?svg=true)](https://ci.appveyor.com/project/motdotla/dotenv/branch/master)
+[![BuildStatus](https://img.shields.io/travis/tylerlong/dotenv-override/master.svg?style=flat-square)](https://travis-ci.org/tylerlong/dotenv-override)
+[![Build status](https://ci.appveyor.com/api/projects/status/github/tylerlong/dotenv-override?svg=true)](https://ci.appveyor.com/project/tylerlong/dotenv-override/branch/master)
 [![NPM version](https://img.shields.io/npm/v/dotenv.svg?style=flat-square)](https://www.npmjs.com/package/dotenv)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/feross/standard)
-[![Coverage Status](https://img.shields.io/coveralls/motdotla/dotenv/master.svg?style=flat-square)](https://coveralls.io/github/motdotla/dotenv?branch=coverall-intergration)
+[![Coverage Status](https://img.shields.io/coveralls/tylerlong/dotenv-override/master.svg?style=flat-square)](https://coveralls.io/github/tylerlong/dotenv-override?branch=coverall-intergration)
+
+
+This project is a fork of [motdotla/dotenv](https://github.com/tylerlong/dotenv-override). The difference is this project **by default overrides** system environment variables.
+
 
 ## Install
 
