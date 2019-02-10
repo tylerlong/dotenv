@@ -1,5 +1,7 @@
 # dotenv-override-true
 
+It's dotenv, but by default overrides system environment variables.
+
 This project is a fork of [motdotla/dotenv](https://github.com/tylerlong/dotenv-override-true). The difference is this project **by default overrides** system environment variables.
 
 

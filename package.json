@@ -1,7 +1,7 @@
 {
   "name": "dotenv-override-true",
   "version": "6.2.0",
-  "description": "Loads environment variables from .env file",
+  "description": "It's dotenv, but by default overrides system environment variables",
   "main": "lib/main.js",
   "scripts": {
     "flow": "flow",
