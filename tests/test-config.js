@@ -59,7 +59,7 @@ t.test('takes option for debug', ct => {
   ct.plan(1)
 
   const logStub = sinon.stub(console, 'log')
-  dotenv.config({ debug: 'true' })
+  dotenv.config({ debug: true, override: false })
 
   ct.ok(logStub.called)
   logStub.restore()
@@ -89,7 +89,7 @@ t.test('does not write over keys already in process.env', ct => {
   const existing = 'bar'
   process.env.test = existing
   // 'foo' returned as value in `beforeEach`. should keep this 'bar'
-  const env = dotenv.config()
+  const env = dotenv.config({ override: false })
 
   ct.equal(env.parsed && env.parsed.test, mockParseResponse.test)
   ct.equal(process.env.test, existing)
@@ -103,7 +103,7 @@ t.test(
     const existing = ''
     process.env.test = existing
     // 'foo' returned as value in `beforeEach`. should keep this ''
-    const env = dotenv.config()
+    const env = dotenv.config({ override: false })
 
     ct.equal(env.parsed && env.parsed.test, mockParseResponse.test)
     // NB: process.env.test becomes undefined on Windows
