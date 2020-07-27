@@ -1,8 +1,9 @@
 {
   "name": "dotenv-override-true",
-  "version": "6.2.0",
+  "version": "6.2.1",
   "description": "It's dotenv, but by default overrides system environment variables",
   "main": "lib/main.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "flow": "flow",
     "lint": "standard",
